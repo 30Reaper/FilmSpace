@@ -1,0 +1,107 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1d3261;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form textarea:focus {
+  border-color: #0078d4;
+  outline: none;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+}
+
+.feedback-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+
+.feedback-form legend {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.feedback-form label {
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.feedback-form input[type="radio"] {
+  margin-right: 4px;
+}
+
+.feedback-form button[type="submit"] {
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.feedback-form button[type="submit"]:hover {
+  background: #005fa3;
+}
+
+.modal-content button {
+  float: right;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
